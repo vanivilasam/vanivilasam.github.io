@@ -1,3 +1,3 @@
-document.querySelector('img').addEventListener(contextmenu, (e) => {
+document.querySelector('img').addEventListener(oncontextmenu, (e) => {
     e.preventDefault();
 })
