@@ -4,3 +4,9 @@ h1{
     color: red;
     background-color: aliceblue;
 }
+img{
+    margin: 10px;
+    border: "doted";
+    width: 500px;
+    height: 500px;
+}
