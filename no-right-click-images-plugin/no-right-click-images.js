@@ -15,17 +15,17 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 ***********************************************/
-	document.addEventListener("contextmenu",kpg_nrci_cm, false);
+	index.html.addEventListener("contextmenu",kpg_nrci_cm, false);
 	
 	if (nrci_opts['drag']=='Y') {
-		document.addEventListener("dragstart",kpg_nrci_cm, false);
-		document.addEventListener("touchmove",kpg_nrci_cm, false); /* same as drag? */
+		index.html.addEventListener("dragstart",kpg_nrci_cm, false);
+		index.html.addEventListener("touchmove",kpg_nrci_cm, false); /* same as drag? */
 	}
 	if (nrci_opts['touch']=='Y') {
-		document.addEventListener("touchstart",kpg_nrci_cm, false);
+		index.html.addEventListener("touchstart",kpg_nrci_cm, false);
 	}
 	if (nrci_opts['gesture']=='Y') {
-		document.addEventListener("gesturestart",kpg_nrci_cm, false);
+		index.html.addEventListener("gesturestart",kpg_nrci_cm, false);
 	}
 
 
