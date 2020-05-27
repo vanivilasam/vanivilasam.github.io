@@ -1,169 +1,107 @@
 <!DOCTYPE html>
-<html lang="ml">
-<head>
-   <script language="JavaScript" Type="text/javascript">
-<!--
-function popupMsg(theMsg) {
-alert(theMsg);
+<html>
+	<head>
+        <link href="style.css">
+		<style>
+
+			.logo{
+				align-items: center;
+				align-content: center;
+				align-self: center;
+				margin-left: auto;
+				margin-right: auto;
+				width: 300px;
+				display: block;
+				height: 90px;
+				background: #F5F5F5;
+			}
+			body{
+				border: 0px;
+				margin: 0px;
+				
+			}
+			#head{
+				width:1000p;
+				background:#D30E12;
+			
+			}
+			#sidebar{
+				width: 300px;
+				height: 600px;
+				background: #DBFF3B;
+				float: left;
+				
+			}
+			#list{
+				padding:20px;
+				color: black;
+				font-size: 20px;
+			}
+			#data{
+				height: 700px;
+				background:#1FD03E;
+				
+			}
+			#list:hover{
+				background: #1FD03E;
+				color: white;
+			}
+			.mySlides {
+				display:none;
+				align-items: center;
+				align-content: center;
+				align-self: center;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+                width:300px;
+                padding: 10px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div id="head" class="header" style="background-color: red;">
+			<img src="file:///C:/Users/Admin//Desktop/vaniv/vanivilasam.github.io/image/praying-hands-1341827347OnP.png" class="logo">
+		</div>
+		
+		<div id="sidebar">
+			<b><li id="list">Home</li></b>
+			<b><li id ="list">About</li></b>
+			<b><li id="list">Contact</li></b>
+		    <b><li id="list">Teachers</li></b>
+			<b><li id="list">Quiz</li></b>
+			<b><li id="list">Schoool Wiki</li></b>
+			<b><li id="list">Admission</li></b>
+			<b><li id="list">Activities</li></b>
+		 
+			
+		
+		</div>
+		
+		<div id="data">
+			 <img class="mySlides" src="../vaniv/vanivilasam.github.io/image/IMG_19700102_172741.jpg">
+             <img class="mySlides" src="../vaniv/vanivilasam.github.io/image/IMG_19700102_172732.jpg">
+             <img class="mySlides" src="../vaniv/vanivilasam.github.io/image/IMG_19700102_172913.jpg">
+			<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-//-->
 </script>
-    <script src="http://demo.itsolutionstuff.com/plugin/jquery.js"></script>
-    <link rel="shortcut icon" href="file:///C:/Users/Admin/Untitled-1.png"type="image/x-icon">
-
-    <title>VVUPS</title>
-    <link rel = "icon" href = "image/praying-hands-1341827347OnP.png" 
-        type = "image/x-icon">      
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    .float_image{
-        
-        margin-bottom: 10px;
-        margin-right: 10px;
-        border-bottom-color: black;
-        border-bottom-width: medium;
-    }
-   
-    
-    
-        
-    
-    h1{
-        text-align: center;
-        font-size: 50px;
-        color: blue;
-    }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-    .font_class{
-        font-size: 20px;
-        font-family: fantasy;
-        text-align: left;
-        color: aliceblue;
-        background-color: black;
-    }
-    .marquee_image{
-        width: 500;
-        height: 500;
-        margin-left: 10px
-    }
-    img{
-        width: 500px;
-        height: 500px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-style: double;
-        
-    }
-    .immage{
-        width: 100px;
-        height: 100px;
-        margin-bottom: none;
-        margin: none;
-        
-    }
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  height: 100px;
-}
-    footer{
-        text-align: center;
-    }
-</style>
-</head>
-<body  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')">
-    <div>
-        <p>
-            <a href="index.html"></a>
-            <a href="index.html"><img src="image/praying-hands-1341827347OnP.png" style="float: left; border: none" height="25px" width="25px" class="immage"></a> </p>
-    <h1><a href="vanivilasam.github.io">VANIVILASAM UP SCHOOL</a></h1>
-        </div>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-    <a href="Contact Detail.html" target="_blank" >Contact</a>
-  <a href="about.html" target="_blank">About</a>
-    <a href="#Teachers">Teachers</a>
-    <a href="Quiz/New%20Text%20Document.html" target="_blank">Quiz</a>
-    <a href="https://schoolwiki.in/%E0%B4%B5%E0%B4%BE%E0%B4%A3%E0%B5%80%E0%B4%B5%E0%B4%BF%E0%B4%B2%E0%B4%BE%E0%B4%B8%E0%B4%82_%E0%B4%AF%E0%B5%81_%E0%B4%AA%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE" target="_blank">SchoolWiki</a>
-    <a href="https://vipditryzfmvbc5wutvzqa-on.drv.tw/Quiz/New%20Text%20Document.html" target="_blank">Downloads</a>
-    <a href="https://samagra.kite.kerala.gov.in/#/textbook/page" target="_blank">Text Book</a>
-    <a href="login.php" target="_blank">Login</a>
-    <a href="Admission.hTml" target="_blank">For Admission</a>
-    <a href="Kavitha/main.html">Activities</a>
-	<a href="chath.html">Chat</a>
-</div>
-
-<div style="padding-left:16px">
-<div style="padding-left:16px">
-    
-  <h2>This is the official website of Vanivilasam UP School. For more information contact 9746559325,9746559325</h2>
-    <hr>
-  <marquee scrollamount="10" direction="left" behavior="scroll" >വാണീ വിലാസം സ്കൂൾ സ്ഥാപിതമായത് 1923 ലാണ് . അതിനാൽ തന്നെ വർഷങ്ങളുടെ  പാരമ്പര്യം  ഈ സ്കൂളിനുണ്ട്. സ്കൂളിൻ്റെ ഔദ്യോഗിക വെബ് സൈറ്റിലേക്ക് സ്വാഗതം.സ്കൂളുമായി ബന്ധപ്പെട്ട എല്ലാ വിവരങ്ങളും ഇവിടെ ലഭിക്കും. </marquee>
-    
-    <hr>
-    
-    <marquee class="marquee_image">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.06.22%20PM%20(1).jpeg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.06.22%20PM.jpeg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.24.53%20PM%20(1).jpeg">
-<a href="vanivilasam.github.io"><img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.24.58%20PM.jpeg"></a> <img  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.24.56%20PM.jpeg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/WhatsApp%20Image%202020-05-18%20at%2012.24.56%20PM%20(1).jpeg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172732.jpg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172741.jpg">
-<img  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172839.jpg">
-<img oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172857.jpg">
-<img  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172913.jpg">
-<img  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src = "image/IMG_19700102_172934.jpg">
-<img  oncontextmenu="popupMsg('This image is Copyrighted -- Computer Hope 2007')" src="image/IMG_19700102_172955.jpg">
-    </marquee>
-    <script src="no-right-click-images-plugin/no-right-click-images.js"></script>
-    <hr>
-    <p><i><b>നിങ്ങളുടെ കുട്ടികൾക്ക് മികച്ച വിദ്യാഭ്യാസം നമ്മുടെ സ്കൂൾ ഉറപ്പ് വരുത്തുന്നു.ഒപ്പം കലാ കായിക മത്സരങ്ങളിലും മറ്റും നിങ്ങളുടെ കുട്ടികളുടെ പങ്കാളിത്തവുംം നാം ഉറപ്പ് തരുന്നു . മികച്ച ഭൌതിക സൌകര്യങ്ങളും മറ്റും ഈ സ്കൂളിനുണ്ട് . അതിനാൽ തന്നെ നിങ്ങളുടെ കുട്ടകളെ ഏൽപ്പിക്കുന്ന ഏറ്റവും നല്ല കരങ്ങളായിരിക്കും വാണീ വിലാസം.</b></i> </p>
-    <hr>
-    <p>
-        <a href="Admission.hTml"></a><nav class="navigation">
-  
-    <a href="Admission.hTml"><img src="image/Untitled.GIF" style="align-content: center; align-items: center; border: none; float:inherit" class="center"></a> </p>
-    <h1 class="font_class"><b>ചരിത്രം</b></h1>
-    <p>കണ്ണൂർ കോർപറേഷനിലെ എളയാവൂർ ഡിവിഷൻ നമ്പർ23ലാണ് സ്കൂൾ സ്റിതിചെയ്യുന്നത്.<br>പരേതനായ ശ്രീ കോമത്ത് കുഞ്ഞമ്പു മാസ്റ്ററാണ് സ്ഥാപകൻ.ഇപ്പോഴത്തെ കെട്ടിടത്തിന് സമീപമുള്ള പറമ്പിൽ ഒരു ഓല മേഞ ഷെഡിൽ 1923 ഇൽ ആരംഭിച്ച സ്കൂളിൽ 1.<br>മുതൽ 5 വരെ ക്ലാസുകൾ ഉണ്ടായിരുന്നു. പിന്നീട് ഇന്ന് കാണുന്ന കെട്ടിടത്തിലേക്ക് മാറി പ്രവർത്തനമാരംഭിച്ചു. അന്ന് ഇത് ഒരു LP.സ്കൂൾ ആയിരുന്നു. 1929 ലാണ് സംസ്ഥാന സർക്കാർ അംഗീകാരം നൽകിയത്.1958 ഇൽ 6 - 7 കക്ലാസുകൾ കൂടി ഉൾപ്പെടുത്തി യു പി സ്കൂൾ ആയി ഉയർത്തി. 1966 ഇൽ യു പി ക്ലാസ്സുകൾക്കും സർക്കാർ അംഗീകാരം ലഭിച്ചു. അക്കാലത്തു <br>എല്ലാ ക്ലാസ്സുകൾക്കും ഡിവിഷനുകൾ ഉണ്ടായിരുന്നു. 14 ക്ലാസും 14 ക്ലാസ്സ്‌ടീച്ചർമാരും കൂടാതെ പ്രവൃത്തിപരിചയം, ഉറുദു, സംസ്കൃതം ഹിന്ദി എന്നിവയ്ക്ക് പ്രത്യേകം അധ്യാപകർ ഉണ്ടായിരുന്നു</p>
-    <hr>
-    <footer><small>&copy; Copyright 2020 Harikesh O P</small></footer>
-
-    </div>
-    
-    
-
-</body>
+		
+		
+		</div>
+	</body>
 </html>
