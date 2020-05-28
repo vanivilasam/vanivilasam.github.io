@@ -41,7 +41,7 @@ function kpg_nrci_block(event) {
 }
 function kpg_nrci_cm(event) {
 	try {
-		if (event.target.tagName == "DIV") {
+		if (event.target.tagName == "IMG") {
 			//alert("in IMG");
 			event.cancelBubble = true;
 			if(event.preventDefault != undefined) {
