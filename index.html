@@ -10,6 +10,21 @@
 		<script src="control key disbale.js"></script>
 		<title>Vani Vilasam UP School</title>
 		<link rel="icon" href="image/praying-hands-1341827347OnP.png" type="image/icon type">
+		<script type="text/javascript">
+			document.onkeydown=DisableCtrlKey;
+			function DisableCtrlKey(e) {
+				var keycode;
+				if (window.event) {
+    	keycode=window.event.keyCode;
+    				}
+				else if (e) {
+					keycode=e.which;
+    					}
+				if(keycode == 17) {
+    				void(0);
+    			}
+			}
+		</script>
 
         <link href="style.css">
 		<style>
