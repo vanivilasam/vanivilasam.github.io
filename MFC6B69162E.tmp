@@ -63,13 +63,6 @@
 				margin: 0px;
 				
 			}
-			#school{
-				width: 200px;
-			    height: 200px;
-				border:solid;
-				border-color: blue;
-				margin: 10px;
-			}
 			#head{
 				width:1000p;
 				background:#000000;
@@ -96,14 +89,7 @@
 				background: #1FD03E;
 				color: white;
 			}
-			.fling-minislide {width:350px; height:300px; overflow:hidden; position:relative;padding: 10px; align-content: center; }
-			.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
-			@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-			.fling-minislide img:nth-child(4){animation-delay:0s;}
-			.fling-minislide img:nth-child(3){animation-delay:5s;}
-			.fling-minislide img:nth-child(2){animation-delay:10s;}
-			.fling-minislide img:nth-child(1){animation-delay:15s;}
 
  
 			
@@ -142,15 +128,6 @@
 		</div>
 		
 		<div id="data">
-			<div class="fling-minislide">
-			<img id="school" src="image/IMG_19700102_172732.jpg" class="fling-minislide">
-			<img id="school" src="image/IMG_19700102_172741.jpg" class="fling-minislide">
-			<img id="school" src="image/IMG_19700102_172839.jpg" class="fling-minislide">
-			<img id="school" src="image/IMG_19700102_172857.jpg" class="fling-minislide">
-			</div>
-
-			
-			
 			
 </div>
 			
